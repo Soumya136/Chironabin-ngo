@@ -1,3 +1,4 @@
+
 'use client'
 
 import React from 'react'
@@ -6,7 +7,7 @@ import { Menu, X } from 'lucide-react'
 const menuItems = [
   {
     name: 'Home',
-    href: '#',
+    href: '/Home',
   },
   {
     name: 'About',
@@ -18,7 +19,7 @@ const menuItems = [
   },
   {
     name: 'Contact',
-    href: '#',
+    href: '/ContactUs',
   },
 ]
 
