@@ -1,8 +1,8 @@
-
 'use client'
 
 import React from 'react'
 import { Menu, X } from 'lucide-react'
+import Link from 'next/link';
 
 const menuItems = [
   {
@@ -15,12 +15,16 @@ const menuItems = [
   },
   {
     name: 'News and Events',
-    href: '#',
+    href: '/NewsAndEvents',
   },
   {
     name: 'Contact',
-    href: '/ContactUs',
+    href: '/Contact',
   },
+  {
+    name : 'Gallery',
+    href : '/Gallery'
+  }
 ]
 
 export function Navbar() {
@@ -28,6 +32,10 @@ export function Navbar() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
+  }
+
+  const handleNavigation = (href) => {
+    window.location.href = href;
   }
 
   return (
@@ -40,12 +48,12 @@ export function Navbar() {
           <ul className="inline-flex space-x-8">
             {menuItems.map((item) => (
               <li key={item.name}>
-                <a
-                  href={item.href}
-                  className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+                <button
+                  onClick={() => handleNavigation(item.href)}
+                  className="text-sm font-semibold text-gray-800 hover:text-gray-900 bg-transparent border-none"
                 >
                   {item.name}
-                </a>
+                </button>
               </li>
             ))}
           </ul>
@@ -83,15 +91,15 @@ export function Navbar() {
                 <div className="mt-6">
                   <nav className="grid gap-y-4">
                     {menuItems.map((item) => (
-                      <a
+                      <button
                         key={item.name}
-                        href={item.href}
-                        className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
+                        onClick={() => handleNavigation(item.href)}
+                        className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50 bg-transparent border-none"
                       >
                         <span className="ml-3 text-base font-medium text-gray-900">
                           {item.name}
                         </span>
-                      </a>
+                      </button>
                     ))}
                   </nav>
                 </div>
