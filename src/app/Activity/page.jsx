@@ -1,6 +1,20 @@
 import React from 'react';
+import MultiCardCarousel from '../components/MultiCardCarousel';
+import "../globals.css";
 
 export default function Activity() {
+    
+    let cards = [
+        {
+            title: "Aurobindo Hostel for SC",
+            content: "People of Schedule cast community are very too much poor they have no source of income. They earn their lively hood by way of traditional business i.e. net for catching fish, fishing rod and selling fish etc. Financial condition of the people of the schedule cast community is not sound as such they cannot provide education to their son. We have launched a hostel for S.C. student to provide education to the children of Schedule cast family. So that the S.C. children may prosper and develop efficacious in feature life. We are trying our best to bring the SC students in the main stream of life through proper and education, love, care and protection. Thanks to Govt. of India for financial assistance"
+        },
+        {
+            title: "Family Counseling Center",
+            content: "We are running the Family Counseling Centre from 1994 for salving the marital dispute. In the present age every Family are suffering from various kind of complex such as marital dispute, polygamy, Dowry, unemployed, dissatisfaction for sexual hunger unable to issue child. When our counselor of F.C.C get information from family members police station the counselor enquire about this matter to assertion actual state of affairs. After that the counselor issue notices both the parties to come to the centre fixing date for hearing. On the date of hearing both the parties come to the office. The counselor counseling both the parties. The counselor solves the problem by mutual understanding. In such away many cases have been solved. Now the so many couples are enjoying peaceful life. When the case is completed and no chance of solve the counselor refer the case to the legal aid to solve the matter."
+        },
+    ]
+    
     return (
         <div className="flex-1 w-full">
             <div className="flex-col items-center text-center mb-3">
@@ -23,7 +37,11 @@ export default function Activity() {
             </div>
             <div className="flex-col items-center text-center my-3 border-b">
                 <h2 className="text-4xl my-2 font-bold">Our Achievements</h2>
-            </div>        
+            </div>
+            {/* starting card Carousel */}
+            <div className="w-[60%] m-auto pt-11 border shadow rounded-lg">
+                <MultiCardCarousel cards={cards} />
+            </div>
         </div>
-    );
+    )
 }
