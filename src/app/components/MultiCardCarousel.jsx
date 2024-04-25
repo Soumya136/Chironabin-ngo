@@ -15,15 +15,15 @@ export default function MultiCardCarousel({ cards }) {
     };
 
     return (
-        <div className="overflow-hidden relative">
+        <div className="overflow-hidden relative w-fill">
             <div
-                className="flex transition ease-out duration-400"
+                className="flex transition ease-out duration-400 "
                 style={{ transform: `translateX(-${current * 100}%)` }}
             >
                 {cards.map((card, index) => (
-                    <div key={index} className="flex-1 flex-col align-center w-full">
-                        <h2 className="text-3xl">{card.title}</h2>
-                        <p>{card.content}</p>
+                    <div key={index} className="min-w-[100%] px-24 box-border text-center">
+                        <h2 className="text-3xl mb-3">{card.title}</h2>
+                        <p className="mb-12">{card.content}</p>
                     </div>
                 ))}
             </div>
@@ -42,7 +42,7 @@ export default function MultiCardCarousel({ cards }) {
                     <div
                         key={index}
                         onClick={() => setCurrent(index)}
-                        className={`rounded-full w-5 h-5 cursor-pointer ${index === current ? 'bg-white' : 'bg-gray-500'}`}
+                        className={`rounded-full w-5 h-5 cursor-pointer ${index === current ? 'bg-black' : 'bg-gray-300'}`}
                     ></div>
                 ))}
             </div>
