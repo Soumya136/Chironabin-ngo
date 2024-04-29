@@ -62,7 +62,7 @@ export default function Activity() {
         },
         {
             title: "Mentor Club under N.Y.K",
-            content:  "Mentor club is generally established for youth development. It is a autonomous body of Central Govt. under Youth affairs & Sports. The main object of mentor club for youth development. Two mentor club is in the one Block . The main function of mentor club will support development of small club which affiliated with N.Y.K."
+            content: "Mentor club is generally established for youth development. It is a autonomous body of Central Govt. under Youth affairs & Sports. The main object of mentor club for youth development. Two mentor club is in the one Block . The main function of mentor club will support development of small club which affiliated with N.Y.K."
         },
         {
             title: "ASSISTANT TO DISABLED PERSONS FOR PURCHASING AIDS AND APPLIANCES: (ADIP)",
@@ -84,31 +84,100 @@ export default function Activity() {
 
     return (
         <div className="flex-1 w-full">
+
+            {/* Title */}
             <div className="flex-col items-center text-center mb-3">
                 <h1 className="text-4xl font-bold my-2">Activity</h1>
                 <h2 className="text-2xl">Our Project View On Institutional Care</h2>
             </div>
+
+            {/* first card */}
             <div className="flex flex-col bg-white border border-gray-200 rounded-lg shadow sm:flex-row sm:max-w-full dark:border-gray-700 dark:bg-gray-800 mb-4">
                 <div className="flex flex-col p-4 leading-normal">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Observation Home For JCL Boys</h5>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">We have started Observation home in the year 2012, January.The all J.C.L Boys of observation home under J.J.act of I.C.P.S are involved with various kind of antisocial activities . The main object of the Govt. is to correct the life of criminal boy by care protection and love white view to bring them in the main stream of life so that the J.C.L Boys may stand at their won fit and prosper in future life. We have already admitted two J.C.L boys in the school. Beside this we have also engaged arts and craft teacher for unschooled J.C.L boys. There is an all arrangement of playing football, volley ball, cricket.14 staff has been engaged to look after the J.C.L Boys. Food clothes are regular supply to the J.C.L Boys and medical treatment are properly done by regd. medical practitioner. Thanks to Govt. of W.B. & Govt. of India for financial assistance.</p>
                 </div>
-                <img className="object-cover w-full rounded-t-lg h-auto sm:h-auto sm:w-52 sm:rounded-none sm:rounded-s-lg" src="http://www.chiranabin.org.in/style/images/pic1.png" alt="image of people" />
+                <img className="object-cover w-full rounded-b-lg h-auto sm:h-auto sm:w-52 sm:rounded-none sm:rounded-e-lg" src="http://www.chiranabin.org.in/style/images/pic1.png" alt="image of people" />
             </div>
+
+            {/* second card */}
             <div className="flex flex-col bg-white border border-gray-200 rounded-lg shadow sm:flex-row sm:max-w-full dark:border-gray-700 dark:bg-gray-800 mb-4">
-                <img className="object-cover w-full rounded-t-lg h-auto sm:h-auto sm:w-52 sm:rounded-none sm:rounded-s-lg" src="http://www.chiranabin.org.in/style/images/pic2.png" alt="image of people playing cricket" />
+                <img className="object-cover w-full rounded-b-lg h-auto sm:h-auto sm:w-52 sm:rounded-none sm:rounded-s-lg" src="http://www.chiranabin.org.in/style/images/pic2.png" alt="image of people playing cricket" />
                 <div className="flex flex-col p-4 leading-normal order-first sm:order-last">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">CHILDREN AND AFTER CARE HOME FOR WOMEN & GIRLS OF ICPS UNDER j.j. act</h5>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">We are running the children home from the year 1998.We at first started the children home (formerly shelter home) with limited MR girls now its strength has reached to the 167. Forty two staffs have been engaged to look after MR girls. There are two categories inmates i.e. mild and moderate .The inmates are homeless parent less, and have no identity. The inmates come from CWC. When the inmates come to the children home they were ill faded and ill clad, and feeble. They cant eat individually and wear garments .Now they are vivacious for proper treatment care protection food lodging etc. It is our great pleasure that we have able retained about 42 inmates to the mother lap. We have made and arrangement of education, recreation, V.T so that the inmates may get relief from monotonous life and enjoy recreation by way of song, music under the guidance of musician and also arrangement of tailoring sewing so that the inmates may be self supported. Special educator teaches the mild category inmates with great care and attentively. It is found the inmates are developing gradually improve in studies, dancing, song and recitation. Inmates participate in the different programmers of our organization. Thanks to Govt. of W.B. & Govt. of India for financial assistance.</p>
                 </div>
             </div>
+
+            {/* title */}
             <div className="flex-col items-center text-center my-8 border-b">
                 <h2 className="text-4xl my-2 font-bold">Our Achievements</h2>
             </div>
+
             {/* starting card Carousel */}
-            <div className="m-auto pt-2 border shadow rounded-lg my-4">
+            <div className="m-auto pt-2 my-4">
                 <MultiCardCarousel cards={cards} />
             </div>
+
+            {/* Future plans and other personnel  */}
+            <section className="flex flex-col sm:justify-evenly border-t sm:flex-row sm:max-w-full dark:border-gray-700 dark:bg-gray-800 pt-12 mb-4">
+
+                {/* future plans */}
+                <div className="bg-white border border-gray-200 rounded-lg shadow mb-4 sm:w-2/5 p-6">
+                    <header className="text-3xl font-bold text-center mb-3">Future Plans</header>
+                    <p className="max-w-md space-y-1 text-base dark:text-gray-400 mb-10 text-center">
+                        As we look to the future, we're committed to constantly improving and expanding our impact. At Chiranabin, we believe in pushing boundaries and trying new approaches to better serve our community. Your donations play a crucial role in bringing our future plans to life. With your support, we can implement exciting new initiatives, reach more people in need, and create lasting change. Here's a glimpse of what we're working towards:
+                    </p>
+                    <ul className="max-w-md space-y-1 list-disc list-inside dark:text-gray-400">
+                        <li>Special School for disable children</li>
+                        <li>V.T. centre for disable children</li>
+                        <li>Primary Basic Training collage</li>
+                        <li>Hospital & Nursing Training College</li>
+                        <li>Play ground development</li>
+                        <li>Screen Printing centre</li>
+                        <li>Rural cancer detection and management centre</li>
+                        <li>Mini indoor stadium & recreational centre</li>
+                        <li>Awareness camp on pollution of environment</li>
+                        <li>Development of Integrated Training Centre</li>
+                    </ul>
+                </div>
+
+                {/* other personnel */}
+                <div className="bg-white border border-gray-200 rounded-lg shadow mb-4 sm:w-2/5 p-6">
+                    <header className="text-3xl font-bold text-center mb-3">Other Personnel</header>
+                    <p className="text-lg underline">Advocate:</p>
+                    <ul className="max-w-md space-y-1 list-disc list-inside dark:text-gray-400">
+                        <li>Mr. Dilip Kr. Ghosh. (M.A.L.L.B)</li>
+                        <li>Mr. Swapan Banerjee (B.Com. LL.B.)</li>
+                        <li>Mr. Timirbaran Mandal (B.Com. L.L.B.)</li>
+                    </ul>
+                    <p className="text-lg underline">Medical Practitioner:</p>
+                    <ul className="max-w-md space-y-1 list-disc list-inside dark:text-gray-400">
+                        <li>Dr. Banamali Samanta. M.B.B.S(Cal.)</li>
+                        <li>Dr. Chaitali Ghosh, M.B.B.S.(Cal.)</li>
+                    </ul>
+                    <p className="text-lg underline">Engineer:</p>
+                    <ul className="max-w-md space-y-1 list-disc list-inside dark:text-gray-400">
+                        <li>Mr. Chittaranjan Mandal</li>
+                        <li>Mr. Panchanan Haldar</li>
+                    </ul>
+                    <p className="text-lg underline">Banker:</p>
+                    <ul className="max-w-md space-y-1 list-disc list-inside dark:text-gray-400">
+                        <li>(LOCAL) State Bank of India. Banitabla Br., Howrah Maidan United Bank of India, Bagnan Br.</li>
+                        <li>(FOREIGN) Br. State Bank of India. Uluberia Br. (F.C.R.A.)</li>
+                    </ul>
+                    <p className="text-lg underline">AUDITORS NAME AND ADDRESS Sambhunath De & Co.:</p>
+                    <p className="max-w-md space-y-1 text-base dark:text-gray-400">
+                        Chartered Accountants
+                    </p>
+                    <p className="max-w-md space-y-1 text-base dark:text-gray-400">
+                        Emerald House, 3rd Floor, 1B, Old Post Office street Kolkata-700001
+                    </p>
+                    <p className="max-w-md space-y-1 text-base dark:text-gray-400">
+                        E-mail:-sambhundeco@yahoo.co.in
+                    </p>
+                </div>
+            </section>
         </div>
     )
 }
