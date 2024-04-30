@@ -6,6 +6,7 @@ import {
     BsFillArrowLeftCircleFill,
 } from "react-icons/bs";
 
+
 export default function PhotoCarousel({ slides }) {
     let [current, setCurrent] = useState(0);
 
