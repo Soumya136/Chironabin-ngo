@@ -28,12 +28,12 @@ export default function PhotoCarousel({ slides }) {
                     transform: `translateX(-${current * 100}%)`,
                 }}
             >
-                {slides.map((s) => {
-                    return <img className="min-w-[100%]" src={s} />;
+                {slides.map((s, index) => {
+                    return <img key={index} className="min-w-[100%]" src={s} />;
                 })}
             </div>
 
-            <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-10 text-3xl">
+            <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-10 text-xl md:text-3xl">
                 <button onClick={previousSlide}>
                     <BsFillArrowLeftCircleFill />
                 </button>
@@ -50,7 +50,7 @@ export default function PhotoCarousel({ slides }) {
                                 setCurrent(i);
                             }}
                             key={"circle" + i}
-                            className={`rounded-full w-5 h-5 cursor-pointer  ${i == current ? "bg-white" : "bg-gray-500"
+                            className={`rounded-full w-2 h-2 md:w-5 md:h-5 cursor-pointer  ${i == current ? "bg-white" : "bg-gray-500"
                                 }`}
                         ></div>
                     );
