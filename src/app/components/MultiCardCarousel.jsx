@@ -15,7 +15,7 @@ export default function MultiCardCarousel({ cards }) {
     };
 
     return (
-        <div className="overflow-hidden relative w-fill">
+        <div className="overflow-hidden relative w-fill ">
             <div
                 className="flex transition ease-out duration-400 items-center"
                 style={{ transform: `translateX(-${current * 100}%)` }}

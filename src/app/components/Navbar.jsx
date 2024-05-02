@@ -7,7 +7,7 @@ import Link from 'next/link';
 const menuItems = [
   {
     name: 'Home',
-    href: '/Home',
+    href: '/',
   },
   {
     name: 'About',
