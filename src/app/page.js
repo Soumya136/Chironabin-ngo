@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <div className="flex flex-col items-center">
       <h1 className="text-3xl">Home</h1>
-      <div className=" w-fill md:w-10/12">
+      <div className=" w-[100%] md:w-10/12">
         <PhotoCarousel slides={slides} />
       </div>
     </div>
