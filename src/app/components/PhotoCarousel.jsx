@@ -7,15 +7,16 @@ import "slick-carousel/slick/slick-theme.css";
 
 function PhotoCarousel({slides}) {
   const settings = {
-    dots: true,
+    dots: false,
+    arrows: false,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     swipeToSlide: true,
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 5000,
-    cssEase: "linear"
+    speed: 10000,
+    autoplaySpeed: 1,
+    cssEase: "linear",
   };
   return (
     <div className="slider-container">
