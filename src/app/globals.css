@@ -12,3 +12,26 @@
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
+.img-body img {
+  display: flex;
+  margin: 0 auto;
+  height: 40vh;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.img-body {
+  width: 100%;
+  outline-color: red;
+  display: inline-block;
+}
+
+.slider-container {
+  margin: 0 auto;
+  width: 100%;
+  height: 50vh;
+  border-color: white;
+}
